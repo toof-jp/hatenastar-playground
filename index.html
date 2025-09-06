@@ -2,8 +2,25 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>title</title>
+    <title>index.html</title>
   </head>
   <body>
+    <h1><a href="https://hatenastar-playground.pages.dev/">index.html</a></h1>
+    <main>
+        <p>本文</p>
+    </main>
+    <div id="hatenastar-container"></div>
+    <script type="text/javascript" src="https://s.hatena.ne.jp/js/HatenaStar.js"></script>
+    <script type="text/javascript">
+        Hatena.Star.SiteConfig = {
+          entryNodes: {
+            'body': {
+              uri: 'h1 a',
+              title: 'h1',
+              container: 'div#hatenastar-container',
+            }
+          }
+        };
+    </script>
   </body>
 </html>
